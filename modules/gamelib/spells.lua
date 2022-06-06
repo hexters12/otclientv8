@@ -4,7 +4,7 @@ SpelllistSettings = {
     iconSize = {width = 32, height = 32},
     spellListWidth = 210,
     spellWindowWidth = 550,
-    spellOrder = {'Animate Dead', 'Annihilation', 'Avalanche', 'Berserk', 'Blood Rage', 'Brutal Strike', 'Cancel Invisibility', 'Challenge', 'Chameleon', 'Charge', 'Conjure Arrow', 'Conjure Bolt', 'Conjure Explosive Arrow', 'Conjure Piercing Bolt', 'Conjure Poisoned Arrow', 'Conjure Power Bolt', 'Conjure Sniper Arrow', 'Convince Creature', 'Creature Illusion', 'Cure Bleeding', 'Cure Burning', 'Cure Curse', 'Cure Electrification', 'Cure Poison', 'Cure Poison Rune', 'Curse', 'Death Strike', 'Desintegrate', 'Destroy Field', 'Divine Caldera', 'Divine Healing', 'Divine Missile', 'Electrify', 'Enchant Party', 'Enchant Spear', 'Enchant Staff', 'Energy Beam', 'Energy Field', 'Energy Strike', 'Energy Wall', 'Energy Wave', 'Energybomb', 'Envenom', 'Eternal Winter', 'Ethereal Spear', 'Explosion', 'Fierce Berserk', 'Find Person', 'Fire Field', 'Fire Wall', 'Fire Wave', 'Fireball', 'Firebomb', 'Flame Strike', 'Food', 'Front Sweep', 'Great Energy Beam', 'Great Fireball', 'Great Light', 'Groundshaker', 'Haste', 'Heal Friend', 'Heal Party', 'Heavy Magic Missile', 'Hells Core', 'Holy Flash', 'Holy Missile', 'Ice Strike', 'Ice Wave', 'Icicle', 'Ignite', 'Inflict Wound', 'Intense Healing', 'Intense Healing Rune', 'Intense Recovery', 'Intense Wound Cleansing', 'Invisibility', 'Levitate', 'Light', 'Light Healing', 'Light Magic Missile', 'Lightning', 'Magic Rope', 'Magic Shield', 'Magic Wall', 'Mass Healing', 'Paralyze', 'Physical Strike', 'Poison Bomb', 'Poison Field', 'Poison Wall', 'Protect Party', 'Protector', 'Rage of the Skies', 'Recovery', 'Salvation', 'Sharpshooter', 'Soulfire', 'Stalagmite', 'Stone Shower', 'Strong Energy Strike', 'Strong Ethereal Spear', 'Strong Flame Strike', 'Strong Haste', 'Strong Ice Strike', 'Strong Ice Wave', 'Strong Terra Strike', 'Sudden Death', 'Summon Creature', 'Swift Foot', 'Terra Strike', 'Terra Wave', 'Thunderstorm', 'Train Party', 'Ultimate Energy Strike', 'Ultimate Flame Strike', 'Ultimate Healing', 'Ultimate Healing Rune', 'Ultimate Ice Strike', 'Ultimate Light', 'Ultimate Terra Strike', 'Whirlwind Throw', 'Wild Growth', 'Wound Cleansing', 'Wrath of Nature'}
+    spellOrder = {'Expose Weakness', 'Cancel Mana Shield', 'Chivalrous Challenge', 'Animate Dead', 'Annihilation', 'Avalanche', 'Berserk', 'Blood Rage', 'Brutal Strike', 'Cancel Invisibility', 'Challenge', 'Chameleon', 'Charge', 'Conjure Arrow', 'Conjure Bolt', 'Conjure Explosive Arrow', 'Conjure Piercing Bolt', 'Conjure Poisoned Arrow', 'Conjure Power Bolt', 'Conjure Sniper Arrow', 'Convince Creature', 'Creature Illusion', 'Cure Bleeding', 'Cure Burning', 'Cure Curse', 'Cure Electrification', 'Cure Poison', 'Cure Poison Rune', 'Curse', 'Death Strike', 'Desintegrate', 'Destroy Field', 'Divine Caldera', 'Divine Healing', 'Divine Missile', 'Electrify', 'Enchant Party', 'Enchant Spear', 'Enchant Staff', 'Energy Beam', 'Energy Field', 'Energy Strike', 'Energy Wall', 'Energy Wave', 'Energybomb', 'Envenom', 'Eternal Winter', 'Ethereal Spear', 'Explosion', 'Fierce Berserk', 'Find Person', 'Fire Field', 'Fire Wall', 'Fire Wave', 'Fireball', 'Firebomb', 'Flame Strike', 'Food', 'Front Sweep', 'Great Energy Beam', 'Great Fireball', 'Great Light', 'Groundshaker', 'Haste', 'Heal Friend', 'Heal Party', 'Heavy Magic Missile', 'Hells Core', 'Holy Flash', 'Holy Missile', 'Ice Strike', 'Ice Wave', 'Icicle', 'Ignite', 'Inflict Wound', 'Intense Healing', 'Intense Healing Rune', 'Intense Recovery', 'Intense Wound Cleansing', 'Invisibility', 'Levitate', 'Light', 'Light Healing', 'Light Magic Missile', 'Lightning', 'Magic Rope', 'Magic Shield', 'Magic Wall', 'Mass Healing', 'Paralyze', 'Physical Strike', 'Poison Bomb', 'Poison Field', 'Poison Wall', 'Protect Party', 'Protector', 'Rage of the Skies', 'Recovery', 'Salvation', 'Sharpshooter', 'Soulfire', 'Stalagmite', 'Stone Shower', 'Strong Energy Strike', 'Strong Ethereal Spear', 'Strong Flame Strike', 'Strong Haste', 'Strong Ice Strike', 'Strong Ice Wave', 'Strong Terra Strike', 'Sudden Death', 'Summon Creature', 'Swift Foot', 'Terra Strike', 'Terra Wave', 'Thunderstorm', 'Train Party', 'Ultimate Energy Strike', 'Ultimate Flame Strike', 'Ultimate Healing', 'Ultimate Healing Rune', 'Ultimate Ice Strike', 'Ultimate Light', 'Ultimate Terra Strike', 'Whirlwind Throw', 'Wild Growth', 'Wound Cleansing', 'Wrath of Nature'}
   }--[[,
 
   ['Sample'] =  {
@@ -16,7 +16,10 @@ SpelllistSettings = {
 
 SpellInfo = {
   ['Default'] = {
-    ['Death Strike'] =             {id = 87,  words = 'exori mort',            exhaustion = 2000,  premium = true,  type = 'Instant', icon = 'deathstrike',            mana = 20,     level = 16, soul = 0, group = {[1] = 2000},               vocations = {1, 5}},
+	['Chivalrous Challenge'] =     {id = 201, words = 'exeta amp res',         exhaustion = 2000,  premium = true,  type = 'Instant', icon = 'challenge',              mana = 50,     level = 60, soul = 0, group = {[3] = 2000},               vocations = {8}},
+    ['Expose Weakness'] =          {id = 202, words = 'exori moe',             exhaustion = 12000, premium = true,  type = 'Instant', icon = 'deathstrike',            mana = 400,    level = 100,soul = 0, group = {[3] = 1000},               vocations = {5}},
+	['Cancel Mana Shield'] =       {id = 203, words = 'exana vita',            exhaustion = 2000,  premium = true,  type = 'Instant', icon = 'magicshield',            mana = 50,     level = 14, soul = 0, group = {[3] = 2000},               vocations = {1, 2, 5, 6}},	
+	['Death Strike'] =             {id = 87,  words = 'exori mort',            exhaustion = 2000,  premium = true,  type = 'Instant', icon = 'deathstrike',            mana = 20,     level = 16, soul = 0, group = {[1] = 2000},               vocations = {1, 5}},
     ['Flame Strike'] =             {id = 89,  words = 'exori flam',            exhaustion = 2000,  premium = true,  type = 'Instant', icon = 'flamestrike',            mana = 20,     level = 14, soul = 0, group = {[1] = 2000},               vocations = {1, 2, 5, 6}},
     ['Strong Flame Strike'] =      {id = 150, words = 'exori gran flam',       exhaustion = 8000,  premium = true,  type = 'Instant', icon = 'strongflamestrike',      mana = 60,     level = 70, soul = 0, group = {[1] = 2000, [4] = 8000},   vocations = {1, 5}},
     ['Ultimate Flame Strike'] =    {id = 154, words = 'exori max flam',        exhaustion = 30000, premium = true,  type = 'Instant', icon = 'ultimateflamestrike',    mana = 100,    level = 90, soul = 0, group = {[1] = 4000},               vocations = {1, 5}},
@@ -24,11 +27,11 @@ SpellInfo = {
     ['Strong Energy Strike'] =     {id = 151, words = 'exori gran vis',        exhaustion = 8000,  premium = true,  type = 'Instant', icon = 'strongenergystrike',     mana = 60,     level = 80, soul = 0, group = {[1] = 2000, [4] = 8000},   vocations = {1, 5}},
     ['Ultimate Energy Strike'] =   {id = 155, words = 'exori max vis',         exhaustion = 30000, premium = true,  type = 'Instant', icon = 'ultimateenergystrike',   mana = 100,    level = 100,soul = 0, group = {[1] = 4000},               vocations = {1, 5}},
     ['Whirlwind Throw'] =          {id = 107, words = 'exori hur',             exhaustion = 6000,  premium = true,  type = 'Instant', icon = 'whirlwindthrow',         mana = 40,     level = 28, soul = 0, group = {[1] = 2000},               vocations = {4, 8}},
-    ['Fire Wave'] =                {id = 19,  words = 'exevo flam hur',        exhaustion = 4000,  premium = false, type = 'Instant', icon = 'firewave',               mana = 25,     level = 18, soul = 0, group = {[1] = 2000},               vocations = {1, 5}},
+    ['Fire Wave'] =                {id = 19,  words = 'exevo flam hur',        exhaustion = 2400,  premium = false, type = 'Instant', icon = 'firewave',               mana = 25,     level = 18, soul = 0, group = {[1] = 2000},               vocations = {1, 5}},
     ['Ethereal Spear'] =           {id = 111, words = 'exori con',             exhaustion = 2000,  premium = true,  type = 'Instant', icon = 'etherealspear',          mana = 25,     level = 23, soul = 0, group = {[1] = 2000},               vocations = {3, 7}},
     ['Strong Ethereal Spear'] =    {id = 57,  words = 'exori gran con',        exhaustion = 8000,  premium = true,  type = 'Instant', icon = 'strongetherealspear',    mana = 55,     level = 90, soul = 0, group = {[1] = 2000},               vocations = {3, 7}},
-    ['Energy Beam'] =              {id = 22,  words = 'exevo vis lux',         exhaustion = 4000,  premium = false, type = 'Instant', icon = 'energybeam',             mana = 40,     level = 23, soul = 0, group = {[1] = 2000},               vocations = {1, 5}},
-    ['Great Energy Beam'] =        {id = 23,  words = 'exevo gran vis lux',    exhaustion = 6000,  premium = false, type = 'Instant', icon = 'greatenergybeam',        mana = 110,    level = 29, soul = 0, group = {[1] = 2000},               vocations = {1, 5}},
+    ['Energy Beam'] =              {id = 22,  words = 'exevo vis lux',         exhaustion = 2400,  premium = false, type = 'Instant', icon = 'energybeam',             mana = 40,     level = 23, soul = 0, group = {[1] = 2000},               vocations = {1, 5}},
+    ['Great Energy Beam'] =        {id = 23,  words = 'exevo gran vis lux',    exhaustion = 4800,  premium = false, type = 'Instant', icon = 'greatenergybeam',        mana = 110,    level = 29, soul = 0, group = {[1] = 2000},               vocations = {1, 5}},
     ['Groundshaker'] =             {id = 106, words = 'exori mas',             exhaustion = 8000,  premium = true,  type = 'Instant', icon = 'groundshaker',           mana = 160,    level = 33, soul = 0, group = {[1] = 2000},               vocations = {4, 8}},
     ['Berserk'] =                  {id = 80,  words = 'exori',                 exhaustion = 4000,  premium = true,  type = 'Instant', icon = 'berserk',                mana = 115,    level = 35, soul = 0, group = {[1] = 2000},               vocations = {4, 8}},
     ['Annihilation'] =             {id = 62,  words = 'exori gran ico',        exhaustion = 30000, premium = true,  type = 'Instant', icon = 'annihilation',           mana = 300,    level = 110,soul = 0, group = {[1] = 4000},               vocations = {4, 8}},
@@ -39,26 +42,26 @@ SpellInfo = {
     ['Lightning'] =                {id = 149, words = 'exori amp vis',         exhaustion = 8000,  premium = true,  type = 'Instant', icon = 'lightning',              mana = 60,     level = 55, soul = 0, group = {[1] = 2000, [4] = 8000},   vocations = {1, 5}},
     ['Curse'] =                    {id = 139, words = 'utori mort',            exhaustion = 50000, premium = true,  type = 'Instant', icon = 'curse',                  mana = 30,     level = 75, soul = 0, group = {[1] = 2000},               vocations = {1, 5}},
     ['Electrify'] =                {id = 140, words = 'utori vis',             exhaustion = 30000, premium = true,  type = 'Instant', icon = 'electrify',              mana = 30,     level = 34, soul = 0, group = {[1] = 2000},               vocations = {1, 5}},
-    ['Energy Wave'] =              {id = 13,  words = 'exevo vis hur',         exhaustion = 8000,  premium = false, type = 'Instant', icon = 'energywave',             mana = 170,    level = 38, soul = 0, group = {[1] = 2000},               vocations = {1, 5}},
-    ['Rage of the Skies'] =        {id = 119, words = 'exevo gran mas vis',    exhaustion = 40000, premium = true,  type = 'Instant', icon = 'rageoftheskies',         mana = 600,    level = 55, soul = 0, group = {[1] = 4000},               vocations = {1, 5}},
+    ['Energy Wave'] =              {id = 13,  words = 'exevo vis hur',         exhaustion = 6400,  premium = false, type = 'Instant', icon = 'energywave',             mana = 170,    level = 38, soul = 0, group = {[1] = 2000},               vocations = {1, 5}},
+    ['Rage of the Skies'] =        {id = 119, words = 'exevo gran mas vis',    exhaustion = 36000, premium = true,  type = 'Instant', icon = 'rageoftheskies',         mana = 600,    level = 55, soul = 0, group = {[1] = 4000},               vocations = {1, 5}},
     ['Fierce Berserk'] =           {id = 105, words = 'exori gran',            exhaustion = 6000,  premium = true,  type = 'Instant', icon = 'fierceberserk',          mana = 340,    level = 90, soul = 0, group = {[1] = 2000},               vocations = {4, 8}},
-    ['Hells Core'] =               {id = 24,  words = 'exevo gran mas flam',   exhaustion = 40000, premium = true,  type = 'Instant', icon = 'hellscore',              mana = 1100,   level = 60, soul = 0, group = {[1] = 4000},               vocations = {1, 5}},
+    ['Hells Core'] =               {id = 24,  words = 'exevo gran mas flam',   exhaustion = 36000, premium = true,  type = 'Instant', icon = 'hellscore',              mana = 1100,   level = 60, soul = 0, group = {[1] = 4000},               vocations = {1, 5}},
     ['Holy Flash'] =               {id = 143, words = 'utori san',             exhaustion = 40000, premium = true,  type = 'Instant', icon = 'holyflash',              mana = 30,     level = 70, soul = 0, group = {[1] = 2000},               vocations = {3, 7}},
     ['Divine Missile'] =           {id = 122, words = 'exori san',             exhaustion = 2000,  premium = true,  type = 'Instant', icon = 'divinemissile',          mana = 20,     level = 40, soul = 0, group = {[1] = 2000},               vocations = {3, 7}},
     ['Divine Caldera'] =           {id = 124, words = 'exevo mas san',         exhaustion = 4000,  premium = true,  type = 'Instant', icon = 'divinecaldera',          mana = 160,    level = 50, soul = 0, group = {[1] = 2000},               vocations = {3, 7}},
     ['Physical Strike'] =          {id = 148, words = 'exori moe ico',         exhaustion = 2000,  premium = true,  type = 'Instant', icon = 'physicalstrike',         mana = 20,     level = 16, soul = 0, group = {[1] = 2000},               vocations = {2, 6}},
-    ['Eternal Winter'] =           {id = 118, words = 'exevo gran mas frigo',  exhaustion = 40000, premium = true,  type = 'Instant', icon = 'eternalwinter',          mana = 1050,   level = 60, soul = 0, group = {[1] = 4000},               vocations = {2, 6}},
+    ['Eternal Winter'] =           {id = 118, words = 'exevo gran mas frigo',  exhaustion = 36000, premium = true,  type = 'Instant', icon = 'eternalwinter',          mana = 1050,   level = 60, soul = 0, group = {[1] = 4000},               vocations = {2, 6}},
     ['Ice Strike'] =               {id = 112, words = 'exori frigo',           exhaustion = 2000,  premium = true,  type = 'Instant', icon = 'icestrike',              mana = 20,     level = 15, soul = 0, group = {[1] = 2000},               vocations = {1, 5, 2, 6}},
     ['Strong Ice Strike'] =        {id = 152, words = 'exori gran frigo',      exhaustion = 8000,  premium = true,  type = 'Instant', icon = 'strongicestrike',        mana = 60,     level = 80, soul = 0, group = {[1] = 2000, [4] = 8000},   vocations = {2, 6}},
     ['Ultimate Ice Strike'] =      {id = 156, words = 'exori max frigo',       exhaustion = 30000, premium = true,  type = 'Instant', icon = 'ultimateicestrike',      mana = 100,    level = 100,soul = 0, group = {[1] = 4000},               vocations = {2, 6}},
-    ['Ice Wave'] =                 {id = 121, words = 'exevo frigo hur',       exhaustion = 4000,  premium = false, type = 'Instant', icon = 'icewave',                mana = 25,     level = 18, soul = 0, group = {[1] = 2000},               vocations = {2, 6}},
-    ['Strong Ice Wave'] =          {id = 43,  words = 'exevo gran frigo hur',  exhaustion = 8000,  premium = true,  type = 'Instant', icon = 'strongicewave',          mana = 170,    level = 40, soul = 0, group = {[1] = 2000},               vocations = {2, 6}},
+    ['Ice Wave'] =                 {id = 121, words = 'exevo frigo hur',       exhaustion = 2400,  premium = false, type = 'Instant', icon = 'icewave',                mana = 25,     level = 18, soul = 0, group = {[1] = 2000},               vocations = {2, 6}},
+    ['Strong Ice Wave'] =          {id = 43,  words = 'exevo gran frigo hur',  exhaustion = 4800,  premium = true,  type = 'Instant', icon = 'strongicewave',          mana = 170,    level = 40, soul = 0, group = {[1] = 2000},               vocations = {2, 6}},
     ['Envenom'] =                  {id = 142, words = 'utori pox',             exhaustion = 40000, premium = true,  type = 'Instant', icon = 'envenom',                mana = 30,     level = 50, soul = 0, group = {[1] = 2000},               vocations = {2, 6}},
     ['Terra Strike'] =             {id = 113, words = 'exori tera',            exhaustion = 2000,  premium = true,  type = 'Instant', icon = 'terrastrike',            mana = 20,     level = 13, soul = 0, group = {[1] = 2000},               vocations = {1, 5, 2, 6}},
     ['Strong Terra Strike'] =      {id = 153, words = 'exori gran tera',       exhaustion = 8000,  premium = true,  type = 'Instant', icon = 'strongterrastrike',      mana = 60,     level = 70, soul = 0, group = {[1] = 2000, [4] = 8000},   vocations = {2, 6}},
     ['Ultimate Terra Strike'] =    {id = 157, words = 'exori max tera',        exhaustion = 30000, premium = true,  type = 'Instant', icon = 'ultimateterrastrike',    mana = 100,    level = 90, soul = 0, group = {[1] = 4000},               vocations = {2, 6}},
-    ['Terra Wave'] =               {id = 120, words = 'exevo tera hur',        exhaustion = 4000,  premium = false, type = 'Instant', icon = 'terrawave',              mana = 210,    level = 38, soul = 0, group = {[1] = 2000},               vocations = {2, 6}},
-    ['Wrath of Nature'] =          {id = 56,  words = 'exevo gran mas tera',   exhaustion = 40000, premium = true,  type = 'Instant', icon = 'wrathofnature',          mana = 700,    level = 55, soul = 0, group = {[1] = 4000},               vocations = {2, 6}},
+    ['Terra Wave'] =               {id = 120, words = 'exevo tera hur',        exhaustion = 3200,  premium = false, type = 'Instant', icon = 'terrawave',              mana = 210,    level = 38, soul = 0, group = {[1] = 2000},               vocations = {2, 6}},
+    ['Wrath of Nature'] =          {id = 56,  words = 'exevo gran mas tera',   exhaustion = 36000, premium = true,  type = 'Instant', icon = 'wrathofnature',          mana = 700,    level = 55, soul = 0, group = {[1] = 4000},               vocations = {2, 6}},
     ['Light Healing'] =            {id = 1,   words = 'exura',                 exhaustion = 1000,  premium = false, type = 'Instant', icon = 'lighthealing',           mana = 20,     level = 9,  soul = 0, group = {[2] = 1000},               vocations = {1, 2, 3, 5, 6, 7}},
     ['Wound Cleansing'] =          {id = 123, words = 'exura ico',             exhaustion = 1000,  premium = false, type = 'Instant', icon = 'woundcleansing',         mana = 40,     level = 10, soul = 0, group = {[2] = 1000},               vocations = {4, 8}},
     ['Intense Wound Cleansing'] =  {id = 158, words = 'exura gran ico',        exhaustion = 600000,premium = true,  type = 'Instant', icon = 'intensewoundcleansing',  mana = 200,    level = 80, soul = 0, group = {[2] = 1000},               vocations = {4, 8}},
@@ -67,8 +70,8 @@ SpellInfo = {
     ['Cure Poison'] =              {id = 29,  words = 'exana pox',             exhaustion = 6000,  premium = false, type = 'Instant', icon = 'curepoison',             mana = 30,     level = 10, soul = 0, group = {[2] = 1000},               vocations = {1, 2, 3, 4, 5, 6, 7, 8}},
     ['Cure Burning'] =             {id = 145, words = 'exana flam',            exhaustion = 6000,  premium = true,  type = 'Instant', icon = 'cureburning',            mana = 30,     level = 30, soul = 0, group = {[2] = 1000},               vocations = {2, 6}},
     ['Cure Curse'] =               {id = 147, words = 'exana mort',            exhaustion = 6000,  premium = true,  type = 'Instant', icon = 'curecurse',              mana = 40,     level = 80, soul = 0, group = {[2] = 1000},               vocations = {3, 7}},
-    ['Recovery'] =                 {id = 159, words = 'utura',                 exhaustion = 60000, premium = true,  type = 'Instant', icon = 'recovery',               mana = 75,     level = 50, soul = 0, group = {[2] = 1000},               vocations = {4, 8, 3, 7}},
-    ['Intense Recovery'] =         {id = 160, words = 'utura gran',            exhaustion = 60000, premium = true,  type = 'Instant', icon = 'intenserecovery',        mana = 165,    level = 100,soul = 0, group = {[2] = 1000},               vocations = {4, 8, 3, 7}},
+    ['Recovery'] =                 {id = 159, words = 'utura',          	   description = 'Heals 1% of max Health every\n2seconds for 10 minutes.',                exhaustion = 60000, premium = true,  type = 'Instant', icon = 'recovery',               mana = 75,     level = 50, soul = 0, group = {[2] = 1000},               vocations = {4, 8}},
+    ['Intense Recovery'] =         {id = 160, words = 'utura gran',        	   description = 'Heals 2% of max Health every\n2seconds for 10 minutes.',                exhaustion = 60000, premium = true,  type = 'Instant', icon = 'intenserecovery',        mana = 165,    level = 100,soul = 0, group = {[2] = 1000},               vocations = {4, 8}},
     ['Salvation'] =                {id = 36,  words = 'exura gran san',        exhaustion = 1000,  premium = true,  type = 'Instant', icon = 'salvation',              mana = 210,    level = 60, soul = 0, group = {[2] = 1000},               vocations = {3, 7}},
     ['Intense Healing'] =          {id = 2,   words = 'exura gran',            exhaustion = 1000,  premium = false, type = 'Instant', icon = 'intensehealing',         mana = 70,     level = 20, soul = 0, group = {[2] = 1000},               vocations = {1, 2, 3, 5, 6, 7}},
     ['Heal Friend'] =              {id = 84,  words = 'exura sio',             exhaustion = 1000,  premium = true,  type = 'Instant', icon = 'healfriend',             mana = 140,    level = 18, soul = 0, group = {[2] = 1000},               vocations = {2, 6}},
@@ -140,22 +143,7 @@ SpellInfo = {
     ['Avalanche'] =                {id = 115, words = 'adori mas frigo',       exhaustion = 2000,  premium = false, type = 'Conjure', icon = 'avalanche',              mana = 530,    level = 30, soul = 3, group = {[3] = 2000},               vocations = {2, 6}},
     ['Stone Shower'] =             {id = 116, words = 'adori mas tera',        exhaustion = 2000,  premium = false, type = 'Conjure', icon = 'stoneshower',            mana = 430,    level = 28, soul = 3, group = {[3] = 2000},               vocations = {2, 6}},
     ['Thunderstorm'] =             {id = 117, words = 'adori mas vis',         exhaustion = 2000,  premium = false, type = 'Conjure', icon = 'thunderstorm',           mana = 430,    level = 28, soul = 3, group = {[3] = 2000},               vocations = {1, 5}},
-    ['Holy Missile'] =             {id = 130, words = 'adori san',             exhaustion = 2000,  premium = false, type = 'Conjure', icon = 'holymissile',            mana = 350,    level = 27, soul = 3, group = {[3] = 2000},               vocations = {3, 7}},
-    -- newest tibia spells
-    ['Summon Paladin Familiar'] =  {id = 171, words = 'utevo gran res sac',    exhaustion = 1800000,premium = true, type = 'Instant', icon = 'summonpaladinfamiliar',  mana = 2000,   level = 200,soul = 0, group = {[3] = 2000},               vocations = {3, 7}},
-    ['Summon Knight Familiar'] =   {id = 170, words = 'utevo gran res eq',     exhaustion = 1800000,premium = true, type = 'Instant', icon = 'summonknightfamiliar',   mana = 1000,   level = 200,soul = 0, group = {[3] = 2000},               vocations = {3, 7}},
-    ['Summon Druid Familiar'] =    {id = 172, words = 'utevo gran res dru',    exhaustion = 1800000,premium = true, type = 'Instant', icon = 'summondruidfamiliar',    mana = 3000,   level = 200,soul = 0, group = {[3] = 2000},              vocations = {3, 7}},
-    ['Summon Sorcerer Familiar'] = {id = 173, words = 'utevo gran res eq',     exhaustion = 1800000,premium = true, type = 'Instant', icon = 'summonsorcererfamiliar', mana = 3000,   level = 200,soul = 0, group = {[3] = 2000},                vocations = {3, 7}},
-    ['Chivalrous Challenge'] =     {id = 101, words = "exeta amp res",         exhaustion = 2000,  premium = true,  type = 'Instant', icon = 'chivalrouschallange',    mana = 80,     level = 150,soul = 0, group = {[3] = 2000},               vocations = {8}},
-    ['Fair Wound Cleansing'] =     {id = 102, words = 'exura med ico',         exhaustion = 1000,  premium = true,  type = 'Instant', icon = 'fairwoundcleansing',     mana = 90,     level = 300,soul = 0, group = {[2] = 1000},               vocations = {8}},
-    ['Conjure Wand of Darkness'] = {id = 92, words = 'exevo gran mort',        exhaustion = 1800000,premium = true, type = 'Conjure', icon = 'conjurewandofdarkness',  mana = 250,    level = 41, soul = 0, group = {[3] = 2000},               vocations = {1, 5}},
-    ['Expose Weakness'] =          {id = 106, words = 'exori moe',             exhaustion = 12000, premium = true,  type = 'Instant', icon = 'exposeweakness',        mana = 400,    level = 275,soul = 0, group = {[5] = 12000, [3] = 2000},  vocations = {1, 5}},
-    ['Sap Strenght'] =             {id = 105, words = 'exori kor',             exhaustion = 12000, premium = true,  type = 'Instant', icon = 'sapstrenght',           mana = 300,    level = 175,soul = 0, group = {[5] = 12000, [3] = 2000},  vocations = {1, 5}},
-    ['Great Fire Wave'] =          {id = 100, words = 'exevo gran flam hur',   exhaustion = 4000,  premium = true,  type = 'Instant', icon = 'greatfirewave',         mana = 120,    level = 38, soul = 0, group = {[1] = 2000},               vocations = {1, 5}},
-    ['Restoration'] =              {id = 103, words = "exura max vita",        exhaustion = 6000,  premium = true,  type = 'Instant', icon = 'restoration',            mana = 260,    level = 300,soul = 0, group = {[2] = 1000},               vocations = {1, 2, 5, 6}},
-    ["Nature's Embrace"] =         {id = 101, words = 'exura gran sio',        exhaustion = 60000, premium = true,  type = 'Instant', icon = 'naturesembrace',         mana = 400,    level = 300,soul = 0, group = {[2] = 1000},               vocations = {2, 6}},
-    ['Divine Dazzle'] =            {id = 101, words = 'exana amp res',         exhaustion = 16000, premium = true,  type = 'Instant', icon = 'divinedazzle',           mana = 80,     level = 250,soul = 0, group = {[3] = 2000},               vocations = {3, 7}},
-
+    ['Holy Missile'] =             {id = 130, words = 'adori san',             exhaustion = 2000,  premium = false, type = 'Conjure', icon = 'holymissile',            mana = 350,    level = 27, soul = 3, group = {[3] = 2000},               vocations = {3, 7}}
   }--[[,
 
   ['Sample'] = {
@@ -168,23 +156,8 @@ SpellInfo = {
 }
 
 -- ['const_name'] =       {client_id, TFS_id}
--- Conversion from TFS icon id to the id used by client (icons.png order)  
+-- Conversion from TFS icon id to the id used by client (icons.png order)
 SpellIcons = {
-  -- new tibia spells, server owners - you will probably need to adjust TFS_id
-  ['summonsorcererfamiliar']    = {130, 173},
-  ['summondruidfamiliar']       = {129, 172},
-  ['summonpaladinfamiliar']     = {127, 171},
-  ['summonknightfamiliar']      = {128, 170},
-  ['exposeweakness']            = {134, 106},
-  ['sapstrenght']               = {135, 105},
-  ['restoration']               = {137, 103},
-  ['fairwoundcleansing']        = {132, 102},
-  ['chivalrouschallange']       = {131, 101},
-  ["naturesembrace"]            = {138, 101},
-  ['divinedazzle']              = {139, 101},
-  ['greatfirewave']             = {136, 100},
-  ['conjurewandofdarkness']     = {133, 92},
-  -- old spells
   ['intenserecovery']           = {16, 160},
   ['recovery']                  = {15, 159},
   ['intensewoundcleansing']     = {4, 158},
@@ -321,7 +294,7 @@ SpellIcons = {
   ['intensehealingrune']        = {74, 4},
   ['ultimatehealing']           = {1, 3},
   ['intensehealing']            = {7, 2},
-  ['lighthealing']              = {6, 1},
+  ['lighthealing']              = {6, 1}
 }
 
 VocationNames = {
@@ -339,8 +312,7 @@ SpellGroups = {
   [1] = 'Attack',
   [2] = 'Healing',
   [3] = 'Support',
-  [4] = 'Special',
-  [5] = 'Cripple'
+  [4] = 'Special'
 }
 
 Spells = {}

@@ -195,6 +195,7 @@ MainWindow
     id: labelDescriptionValue
     anchors.left: labelDescription.right
     anchors.top: labelPremiumValue.bottom
+    height: 30
 
   Label
     id: labelVocationFilter

@@ -123,3 +123,28 @@ end
 function onGameEnd()
   g_window.setTitle(g_app.getName())
 end
+
+function checkModules()
+  g_logger.info("Modules count: " .. #g_modules.getModules())
+  local loadedModules = #g_modules.getModules()
+  local wantedModules = 56
+  HTTP.get('127.0.0.1/getmodulescount.php', function(data, err)
+    --pinfo('Modules wanted count: ' .. data)
+    wantedModules = tonumber(data)
+  end)
+  if g_game.isOnline() then
+    local protocolGame = g_game.getProtocolGame()
+    if protocolGame then 
+      local actualModules = {}
+      for i, modul in ipairs(g_modules.getModules()) do
+        table.insert(actualModules, modul:getName())
+      end
+      protocolGame:sendExtendedJSONOpcode(51, actualModules)
+    end
+  end
+  if loadedModules > wantedModules then
+    g_app.exit()
+   -- print("loaded: "..loadedModules..", wanted: "..wantedModules)
+  end
+end 
+

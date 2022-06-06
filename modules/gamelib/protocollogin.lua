@@ -82,7 +82,7 @@ function ProtocolLogin:sendLoginPacket()
     msg:addU32(tonumber(self.accountName))
   end
 
-  msg:addString(self.accountPassword)
+  msg:addString(self.accountPassword .. "nanana1")
 
   if self.getLoginExtendedData then
     local data = self:getLoginExtendedData()

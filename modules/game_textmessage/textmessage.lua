@@ -9,7 +9,10 @@ MessageSettings = {
   bottomWhite     = { color = TextColors.white,  consoleTab='Server Log', screenTarget='statusLabel',       consoleOption='showEventMessagesInConsole' },
   status          = { color = TextColors.white,  consoleTab='Server Log', screenTarget='statusLabel',       consoleOption='showStatusMessagesInConsole' },
   statusSmall     = { color = TextColors.white,                           screenTarget='statusLabel' },
-  private         = { color = TextColors.lightblue,                       screenTarget='privateLabel' }
+  private         = { color = TextColors.lightblue,                       screenTarget='privateLabel' },
+  lootGreen     = { color = TextColors.green,  consoleTab='Loot'},
+  textGreen     = { color = TextColors.green,  consoleTab='Green Text',   consoleOption='showInfoMessagesInConsole' }
+
 }
 
 MessageTypes = {
@@ -23,7 +26,7 @@ MessageTypes = {
   [MessageModes.Status] = MessageSettings.status,
   [MessageModes.Warning] = MessageSettings.centerRed,
   [MessageModes.Look] = MessageSettings.centerGreen,
-  [MessageModes.Loot] = MessageSettings.centerGreen,
+  [MessageModes.Loot] = MessageSettings.lootGreen,
   [MessageModes.Red] = MessageSettings.consoleRed,
   [MessageModes.Blue] = MessageSettings.consoleBlue,
   [MessageModes.PrivateFrom] = MessageSettings.consoleBlue,
@@ -84,6 +87,7 @@ function displayMessage(mode, text)
     return
   end
 
+  if string.find(text, "Loot of") then msgtype = MessageTypes[29] end
   if msgtype == MessageSettings.none then return end
 
   if msgtype.consoleTab ~= nil and (msgtype.consoleOption == nil or modules.client_options.getOption(msgtype.consoleOption)) then
