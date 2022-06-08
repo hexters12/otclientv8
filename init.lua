@@ -6,7 +6,7 @@ DEFAULT_LAYOUT = "retro" -- on android it's forced to "mobile", check code bello
 -- If you don't use updater or other service, set it to updater = ""
 Services = {
   website = "http://otclient.ovh", -- currently not used
-  updater = "http://otclient.ovh/api/updater.php",
+  updater = "",
   stats = "",
   crash = "http://otclient.ovh/api/crash.php",
   feedback = "http://otclient.ovh/api/feedback.php",
@@ -18,7 +18,7 @@ Servers = {
 --[[  OTClientV8 = "http://otclient.ovh/api/login.php",
   OTClientV8c = "otclient.ovh:7171",
   OTClientV8Test = "http://otclient.ovh/api/login2.php",]]
-  LocalTestServ = "192.168.1.3:7171:1098"  
+  LocalTestServ = "103.193.81.108:7171:1098"  
 }
 
 --Server = "ws://otclient.ovh:3000/"

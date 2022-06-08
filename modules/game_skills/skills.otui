@@ -105,13 +105,6 @@ MiniWindow
       SkillValueLabel
 
     SkillButton
-      id: stamina
-      SkillNameLabel
-        !text: tr('Stamina')
-      SkillValueLabel
-      SkillPercentPanel
-
-    SkillButton
       id: offlineTraining
       SkillNameLabel
         !text: tr('Offline Training')
@@ -134,23 +127,9 @@ MiniWindow
       SkillPercentPanel
 
     SkillButton
-      id: skillId1
-      SkillNameLabel
-        !text: tr('Club Fighting')
-      SkillValueLabel
-      SkillPercentPanel
-
-    SkillButton
-      id: skillId2
-      SkillNameLabel
-        !text: tr('Sword Fighting')
-      SkillValueLabel
-      SkillPercentPanel
-
-    SkillButton
       id: skillId3
       SkillNameLabel
-        !text: tr('Axe Fighting')
+        !text: tr('Melee Fighting')
       SkillValueLabel
       SkillPercentPanel
 
@@ -167,46 +146,3 @@ MiniWindow
         !text: tr('Shielding')
       SkillValueLabel
       SkillPercentPanel
-
-    SkillButton
-      id: skillId6
-      SkillNameLabel
-        !text: tr('Fishing')
-      SkillValueLabel
-      SkillPercentPanel
-
-    SmallSkillButton
-      id: skillId7
-      SkillNameLabel
-        !text: tr('Critical Hit Chance')
-      SkillValueLabel
-
-    SmallSkillButton
-      id: skillId8
-      SkillNameLabel
-        !text: tr('Critical Hit Damage')
-      SkillValueLabel
-
-    SmallSkillButton
-      id: skillId9
-      SkillNameLabel
-        !text: tr('Life Leech Chance')
-      SkillValueLabel
-
-    SmallSkillButton
-      id: skillId10
-      SkillNameLabel
-        !text: tr('Life Leech Amount')
-      SkillValueLabel
-
-    SmallSkillButton
-      id: skillId11
-      SkillNameLabel
-        !text: tr('Mana Leech Chance')
-      SkillValueLabel
-
-    SmallSkillButton
-      id: skillId12
-      SkillNameLabel
-        !text: tr('Mana Leech Amount')
-      SkillValueLabel

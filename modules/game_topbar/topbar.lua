@@ -88,12 +88,10 @@ Icons[PlayerStates.Hungry] = {
 local iconsTable = {
     ["Experience"] = 8,
     ["Magic"] = 0,
-    ["Axe"] = 2,
-    ["Club"] = 1,
+    ["Melee"] = 2,
     ["Distance"] = 3,
     ["Fist"] = 4,
     ["Shielding"] = 5,
-    ["Sword"] = 6,
     ["Fishing"] = 7
 }
 
@@ -183,8 +181,7 @@ function refresh(profileChange)
 end
 
 function refreshVisibleBars()
-    local ids = {"Experience", "Magic", "Axe", "Club", "Distance", "Fist", "Shielding",
-    "Sword", "Fishing"}
+    local ids = {"Experience", "Magic", "Melee", "Club", "Distance", "Fist", "Shielding", "Fishing"}
 
     for i, id in ipairs(ids) do
         local panel = topBar[id] or topBar.skills[id]
@@ -362,8 +359,7 @@ end
 
 function setupSkills()
     local t = {
-        "Experience", "Magic", "Axe", "Club", "Distance", "Fist", "Shielding",
-        "Sword", "Fishing"
+        "Experience", "Magic", "Melee", "Distance", "Fist", "Shielding", "Fishing"
     }
 
     for i, id in ipairs(t) do
@@ -443,7 +439,7 @@ end
 function onSkillChange(localPlayer, id, level, percent)
     id = id + 1
     local t = {
-        "Fist", "Club", "Sword", "Axe", "Distance", "Shielding", "Fishing"
+        "Fist", "Melee", "Distance", "Shielding", "Fishing"
     }
 
     -- imbues, ignore
@@ -458,7 +454,7 @@ end
 function onBaseSkillChange(localPlayer, id, baseLevel)
     id = id + 1
     local t = {
-        "Fist", "Club", "Sword", "Axe", "Distance", "Shielding", "Fishing"
+        "Fist", "Melee", "Distance", "Shielding", "Fishing"
     }
 
     -- imbues, ignore
