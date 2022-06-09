@@ -105,6 +105,14 @@ MiniWindow
       SkillValueLabel
 
     SkillButton
+      visible: false
+      id: stamina
+      SkillNameLabel
+        !text: tr('Stamina')
+      SkillValueLabel
+      SkillPercentPanel
+
+    SkillButton
       id: offlineTraining
       SkillNameLabel
         !text: tr('Offline Training')
@@ -123,6 +131,22 @@ MiniWindow
       id: skillId0
       SkillNameLabel
         !text: tr('Fist Fighting')
+      SkillValueLabel
+      SkillPercentPanel
+
+    SkillButton
+      visible: false
+      id: skillId1
+      SkillNameLabel
+        !text: tr('Club Fighting')
+      SkillValueLabel
+      SkillPercentPanel
+
+    SkillButton
+      visible: false
+      id: skillId2
+      SkillNameLabel
+        !text: tr('Sword Fighting')
       SkillValueLabel
       SkillPercentPanel
 
@@ -146,3 +170,64 @@ MiniWindow
         !text: tr('Shielding')
       SkillValueLabel
       SkillPercentPanel
+
+    SkillButton
+      id: skillId6
+      SkillNameLabel
+        !text: tr('Fishing')
+      SkillValueLabel
+      SkillPercentPanel
+
+    SmallSkillButton
+      id: skillId7
+      visible: false
+      SkillNameLabel
+        !text: tr('Critical Hit Chance')
+        visible: false
+      SkillValueLabel
+        visible: false
+
+    SmallSkillButton
+      id: skillId8
+      visible: false
+      SkillNameLabel
+        !text: tr('Critical Hit Damage')
+        visible: false
+      SkillValueLabel
+        visible: false
+
+    SmallSkillButton
+      id: skillId9
+      visible: false
+      SkillNameLabel
+        !text: tr('Life Leech Chance')
+        visible: false
+      SkillValueLabel
+        visible: false
+
+    SmallSkillButton
+      id: skillId10
+        visible: false
+      SkillNameLabel
+        !text: tr('Life Leech Amount')
+        visible: false
+      SkillValueLabel
+        visible: false
+
+    SmallSkillButton
+      id: skillId11
+      visible: false
+      SkillNameLabel
+        !text: tr('Mana Leech Chance')
+        visible: false
+      SkillValueLabel
+        visible: false
+
+    SmallSkillButton
+      id: skillId12
+      visible: false
+      SkillNameLabel
+        !text: tr('Mana Leech Amount')
+        visible: false
+      SkillValueLabel
+        visible: false

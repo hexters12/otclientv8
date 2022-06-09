@@ -89,9 +89,11 @@ local iconsTable = {
     ["Experience"] = 8,
     ["Magic"] = 0,
     ["Melee"] = 2,
+    ["Club"] = 1,
     ["Distance"] = 3,
     ["Fist"] = 4,
     ["Shielding"] = 5,
+    ["Sword"] = 6,
     ["Fishing"] = 7
 }
 
@@ -181,7 +183,8 @@ function refresh(profileChange)
 end
 
 function refreshVisibleBars()
-    local ids = {"Experience", "Magic", "Melee", "Club", "Distance", "Fist", "Shielding", "Fishing"}
+    local ids = {"Experience", "Magic", "Melee", "Distance", "Fist", "Shielding",
+    "Fishing"}
 
     for i, id in ipairs(ids) do
         local panel = topBar[id] or topBar.skills[id]
@@ -340,10 +343,6 @@ function menu(mouseButton)
     menu:setId("topBarMenu")
     menu:setGameMenu(true)
 
-    local expPanel = topBar.Experience
-    local start = expPanel:isVisible() and "Hide" or "Show"
-    menu:addOption(start .. " Experience Level",
-                   function() toggleSkillPanel(id) end)
     for i, child in ipairs(topBar.skills:getChildren()) do
         local id = child:getId()
         if id ~= "stats" then
@@ -359,7 +358,8 @@ end
 
 function setupSkills()
     local t = {
-        "Experience", "Magic", "Melee", "Distance", "Fist", "Shielding", "Fishing"
+        "Experience", "Magic", "Melee", "Distance", "Fist", "Shielding",
+        "Fishing"
     }
 
     for i, id in ipairs(t) do
@@ -439,7 +439,7 @@ end
 function onSkillChange(localPlayer, id, level, percent)
     id = id + 1
     local t = {
-        "Fist", "Melee", "Distance", "Shielding", "Fishing"
+        "Fist", nil, nil, "Melee", "Distance", "Shielding", "Fishing"
     }
 
     -- imbues, ignore
@@ -454,7 +454,7 @@ end
 function onBaseSkillChange(localPlayer, id, baseLevel)
     id = id + 1
     local t = {
-        "Fist", "Melee", "Distance", "Shielding", "Fishing"
+        "Fist", nil, nil, "Melee", "Distance", "Shielding", "Fishing"
     }
 
     -- imbues, ignore
